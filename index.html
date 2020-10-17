@@ -23,17 +23,63 @@
     
     <!--cssfiles-->
     <link href="css/eigen.css" rel="stylesheet" />
-    <link href="css/nanogallery.min.css" rel="stylesheet" type="text/css">
+    <link href="css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <link  href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script  type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
     
   </head>
   <body>
     <!--homepagina-->
-
+    <!--<div class="overlay "></div>-->
+      <div> <img
+        src="fotosKrop/frontpage.jpg"
+        class="imgFrontpage"
+        alt="foto vrouw op hairpagina"/></div>
+        <div class="titleMessage">
+          <div class="heading">
+            <h1 class="main">Indition</h1>
+            <h2 class="sub typed"></h2>
+            
+          </div>
+        </div>
+      
+        <nav id="navigation" class="navbar  navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Indition</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Wie Zijn wij <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#hair">Hair</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Makeup">Make Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ColorAndStyle">Color And Style</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Gallerij">Gallerij</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Prijslijst</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
     <!--Wie zij wij pagina-->
     
 
     <!--hairpagina-->
-    <div class="backgroundColor1"><h1>Hair</h1>
+    <div class="backgroundColor1" id="hair"><h1>Hair</h1>
       <div class="container ">
        
         <div class="row ">
@@ -55,7 +101,7 @@
             alt="foto vrouw op hairpagina"
           />
           <div class="row-2 text-center mt-5 mb-5">
-            <button type="button" class="btn btn-secondary btn-lg kleurButton ">Gallerij</button>
+            <button type="button" class="btn btn-secondary btn-lg kleurButton " id="hb">Gallerij</button>
           </div>
           </div>
           
@@ -66,7 +112,7 @@
       </div>
     </div>
     <!--MakeUppagina-->
-    <div class="backgroundColor2"><h1>Make Up</h1>
+    <div class="backgroundColor2" id="Makeup"><h1>Make Up</h1>
       <div class="container">
         <div class="row">
           <div class="col-sm-8 mt-5 col-md-6 mb-5">
@@ -94,12 +140,12 @@
     </div>
 
     <!--ColorAndStylepagina-->
-    <div class="backgroundColor1"><h1>Color And Style</h1>
+    <div class="backgroundColor1" id="ColorAndStyle"><h1>Color And Style</h1>
       <div class="container ">
         <div class="row ">
       
             
-            <div class="kleurBlok p-5 col-sm-4 m-0 ">
+            <div class="kleurBlok p-5 col-sm-4  m-0 ">
               <p> Bij een kleuranalyse gaan we kijken naar jou persoonlijke kenmerken, je ogen, je huidskleur en je natuurlijke haarkleur, door deze factoren te beoordelen naargelang koud/warm, helder/gedempt en licht/donker, kunnen we al een selectie maken van welk kleurtype je zou kunnen zijn, daarna maken we gebruik van analysedoeken, deze bestaan uit 6 kleuren in 4 verschillende tinten en zo komen we tot 1 kleurtype al dan niet met bijkomend subtype.</br></br>
 
                 Bij een stijlanalyse, bespreken we jouw lichaamsvorm, geven we tips in termen van kapsel, kleding, juwelen, stoffering zelf en kleding proporties, om deze vorm te ondersteunen waar nodig en te corrigeren waar jij vind dat jou lichaam niet 
@@ -113,7 +159,7 @@
             alt="foto vrouw op Color and style pagina"
           />
           <div class="row-2 text-center mt-5 mb-5">
-            <button type="button" class="btn btn-secondary btn-lg kleurButton ">Gallerij</button>
+            <button type="button" class="btn btn-secondary btn-lg kleurButton "class="buttonGallerij">Gallerij</button>
           </div>
           </div>
           
@@ -122,11 +168,10 @@
     </div>
 
     <!--Gallerijpagina-->
-    <div id="nanoGallery3">
-      <a href="fotosKrop/women13.jpg"  data-ngdesc="Description1">Title Image1</a>
-      <a href="fotosKrop/women14.jpg"  data-ngdesc="Image 2 description">Title Image2</a>
-      <a href="fotosKrop/women15.jpg" >Title Image3</a>
-  </div>
+    <div class="backgroundColor2 " id="Gallerij"><h1>Gallerij</h1>
+    <div id="nanogallery2" class="m-2"></div>
+   </div> 
+    </div>
 
     <!--Prijslijstpagina-->
 
@@ -135,9 +180,10 @@
     
    
 
-   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-   <script src="js/bootstrap.bundle.min.js" ></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
+   <script src="js/bootstrap.bundle.js" ></script>
     <script src="js/eigen.js"></script>
-    <script src="js/jquery.nanogallery.min.js"></script>
+    <script src="js/jquery.nanogallery2.min.js"></script>
+    <script src="js/typed.min.js"></script>
   </body>
 </html>
