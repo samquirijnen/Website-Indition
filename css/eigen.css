@@ -1,10 +1,43 @@
+/* css gehele site*/
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  box-sizing: border-box;
+}
+h1 {
+  font-family: rage;
+  font-style: italic;
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  color: #000000;
+}
+.kleurButton {
+  background-color: #655546;
+}
+
 /* homepagina*/
 
 /* Wie zij wij pagina*/
 
 /* hairpagina*/
-
+.backgroundColor1 {
+  background-color: #322525;
+}
+.img {
+  width: 100%;
+  height: auto;
+}
+.kleur {
+  background-color: #655546;
+}
+.kleurBlok {
+  background-color: #b29c7e;
+}
 /* MakeUppagina*/
+.backgroundColor2 {
+  background-color: #b29c7e;
+}
 
 /* ColorAndStylepagina*/
 
@@ -13,3 +46,16 @@
 /* Prijslijstpagina*/
 
 /*Contactpagina*/
+/*probeersel*/
+.my-flex-container {
+  border: 2px solid #655546;
+}
+.my-flex-container-column {
+  border: 2px solid #b29c7e;
+}
+.my-flex-item {
+  background-color: #b29c7e;
+}
+.my-flex-item2 {
+  background-color: #b29c7e;
+}
