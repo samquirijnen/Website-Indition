@@ -2,7 +2,7 @@
     $(document).ready(function () {
    /* homepagina*/
 
-
+     
     // typed plugin 
   var typed = new Typed(".typed",{
     strings:["Hair", "Make Up","Color And Style"],
@@ -21,10 +21,9 @@
    /* MakeUppagina*/
 
    /* ColorAndStylepagina*/
-   function notify() {
-    alert( "clicked" );
-  }
-  $( ".buttonGallerij" ).click( notify );
+  
+    
+  
    /* Gallerijpagina*/
    
  
@@ -44,7 +43,7 @@
      items: [
         { src: 'fotosKrop/women16.jpg', title: 'Hair',  ID: 1,	kind:'album' },
        
-        { src: 'fotosKrop/women16.jpg', srct: 'fotosKrop/women16.jpg',ID: 4, albumID: 1 },
+        { src: 'fotosKrop/women16.jpg', srct: 'fotosKrop/women16.jpg',ID: 4, albumID: 1,class:'foto' },
         { src: 'fotosKrop/women3.jpg', srct: 'fotosKrop/women3.jpg',ID: 5, albumID: 1 },
         { src: 'fotosKrop/women4.jpg', srct: 'fotosKrop/women4.jpg',ID: 6, albumID: 1 },
         { src: 'fotosKrop/women9.jpg', srct: 'fotosKrop/women9.jpg',ID: 7, albumID: 1 },
@@ -100,10 +99,11 @@ function stickyNavigation(){
   }
 
 };
-
-$(".buttonGallerij").on('click',function () {
-  ("#Gallerij");
+$(".buttonGallerij").on('click',function (e) {
+  e.preventDefault();
+  $('#nanogallery2') + this.id;
 })
+
 
 
 
