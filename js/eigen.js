@@ -21,11 +21,14 @@
    /* MakeUppagina*/
 
    /* ColorAndStylepagina*/
-
+   function notify() {
+    alert( "clicked" );
+  }
+  $( ".buttonGallerij" ).click( notify );
    /* Gallerijpagina*/
    
  
-  
+ 
 
     jQuery("#nanogallery2").nanogallery2( {
       thumbnailWidth:     'auto XS200 SM300',
@@ -98,7 +101,9 @@ function stickyNavigation(){
 
 };
 
-
+$(".buttonGallerij").on('click',function () {
+  ("#Gallerij");
+})
 
 
 

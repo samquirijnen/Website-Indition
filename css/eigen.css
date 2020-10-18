@@ -10,6 +10,8 @@ h1 {
   color: rgb(248, 238, 238);
   font-size: 100px;
   text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .kleurButton {
   background-color: #655546;
@@ -58,6 +60,11 @@ h1 {
 .kleurBlok {
   background-color: #b29c7e;
 }
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 /* MakeUppagina*/
 .backgroundColor2 {
   background-color: #b29c7e;
