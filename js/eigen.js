@@ -1,7 +1,7 @@
    
     $(document).ready(function () {
    /* homepagina*/
-
+   
      
     // typed plugin 
   var typed = new Typed(".typed",{
@@ -56,6 +56,7 @@
 
 
 
+
 //geleidelijk  naar het gedeelte gaan bij klikken menubalk
 $("#navigation li a").on("click", function(e) {
   e.preventDefault();
@@ -65,7 +66,7 @@ $("#navigation li a").on("click", function(e) {
 });
 
 //navigatie sticky
-//const gebruiken als je nav variabele niet meer wil veranderen
+
 
 const nav =$("#navigation");
 const navTop = nav.offset().top;
@@ -84,10 +85,7 @@ function stickyNavigation(){
   }
 
 };
-$(".buttonGallerij").on('click',function (e) {
-  e.preventDefault();
-  $('#nanogallery2') + this.id;
-})
+
 
 
 
