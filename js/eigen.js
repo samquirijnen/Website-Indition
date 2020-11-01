@@ -27,13 +27,13 @@
    /* Gallerijpagina*/
    
  
-   baguetteBox.run("#gallerij1",{
+   baguetteBox.run(".gallerij1",{
     animation:"slide-in"
   })
-  baguetteBox.run("#gallerij2",{
+  baguetteBox.run(".gallerij2",{
     animation:"slide-in"
   })
-  baguetteBox.run("#gallerij3",{
+  baguetteBox.run(".gallerij3",{
     animation:"slide-in"
   })
    
@@ -48,12 +48,18 @@
 
    /* Prijslijstpagina*/
 
-   /*Contactpagina*/
+  
 
 
 
 });
+ /*Contactpagina*/
+ /*GoogleMaps foutmelding htlm5 oplossen*/
 
+$("#four").marginheight = "0";
+$("#four").marginWidth = "0";
+$("#four").frameborder = "0";
+$("#four").scrolling = "no";
 
 
 
